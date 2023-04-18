@@ -29,7 +29,7 @@ elif score >= 60 and score <= 69 :
     print("{}점으로 D입니다.".format(score))
     
 # 6. 아니면
-#   1) "F학점입니다." 출력잘못
+#   1) "F학점입니다." 출력
 elif score >= 0 and score <= 59 :
     print("{}점으로 F입니다.".format(score))
 
