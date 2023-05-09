@@ -20,6 +20,18 @@
 # 5. 합계를 출력한다.
 input_num = int(input("정수를 입력하시오. : "))
 sum = 0
+num = 0
+while num <= 10:
+    num = num + 1
+    if num % input_num == 0:
+        sum = sum + num
+    else :
+        continue
+print("{}의 배수의 합 : {}".format(input_num,sum))
+
+print("================================")
+
+sum = 0
 num = 1
 while num <= 10:
     if num % input_num == 0:
@@ -28,4 +40,15 @@ while num <= 10:
     else :
         num = num + 1
         continue
-print(sum)
+print("{}의 배수의 합 : {}".format(input_num,sum))
+
+print("=for 반복문 ===============================")
+
+sum = 0
+ 
+for num in range(1, 11):
+    if num % input_num == 0:
+        sum = sum + num
+    else :
+        continue
+print("{}의 배수의 합 : {}".format(input_num,sum))
