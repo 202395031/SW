@@ -28,4 +28,4 @@ while num <= 5 :
         print("유효한 성적이 아닙니다.")
         continue
 print("총점은 : {}".format(sum))
-print("평균은 : {}".format(sum/5))
+print("평균은 : {:.2f}".format(sum/5))
