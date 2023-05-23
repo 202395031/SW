@@ -83,10 +83,30 @@ dict1 = {'apple':'사과', 'grape':'포도', 'peach':'복숭아'}
 print("dict1 내용에 '-' 기호를 결합 : ", '-'.join(dict1))
 
 # 문자열 분리 - split() 원하는 단어나 기호등 다른거로도 분리됨
-text1 = 'I like Python Language'
+text1 = 'I Like Python Language'
 # 문자열을 스페이스로 분리하여 리스트로 반환
 list1 = text1.split()   
 print("text1 내용을 스페이스로 분리하여 list 생성 : ", list1)
 
 text2 = 'I-like-Python-Language'
 print("text1 내용을 '-'를 기준으로 분리하여 list로 반환 : ", text2.split('-'))
+
+# 문자열에서 특정 문자 제거, 변환
+text3 = "            I like Python Language     "
+print("text3 내용 : ", text3)
+print("text3 내용 중 양 옆의 빈칸 제거 : ", text3.strip())
+
+print("text1 내용 중 'Like'를 'Love'로 대체 : ", text1.replace("Like", "Love"))
+
+# 문자열 검사
+print("text1 의 모든 단어의 첫 문자가 대문자인가? : ", text1.istitle())
+
+text4 = "abc123"
+print("text4의 문자열이 문자와 숫자로 구성되어 있는가? : ", text4.isalnum()) # isalpha는 문자로만 되어 있는가, isalnum은 문자와 숫자로 되어 있는가임
+
+text5 = "1234567890"
+print("text5의 문자열이 모두 숫자로 구성되어 있는가? : ", text5.isdigit())
+print("text5의 문자열이 모두 문자로 구성되어 있는가? : ", text5.isalpha())
+
+print("text1의 문자열이 모두 대문자로 구성되어 있는가? : ", text1.isupper())
+print("text1의 문자열이 모두 소문자로 구성되어 있는가? : ", text1.islower())
